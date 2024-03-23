@@ -1,67 +1,58 @@
-<script>
-import redBull from "@/assets/redbull.jpeg";
-import data from "../../data.json";
-export default {
-  data() {
-    return {
-      redBull: redBull,
-      filterCategory: "", // Initialize filterCategory
-      data: {
-        photos: [
-          /* Your data structure */
-        ],
-      },
-    };
-  },
-  computed: {
-    filteredImages() {
-      if (this.filterCategory) {
-        const category = this.data.photos.find(
-          (category) => category.category === this.filterCategory
-        );
-        return category ? category.images : [];
-      } else {
-        return this.data.photos.flatMap((category) => category.images);
-      }
-    },
-  },
-};
-</script>
-
 <template>
-  <div class="flex justify-center items-center h-screen">
+  <h1 class="text-[white] text-[40px] text-center mt-[50px]">
+    "Unlock Every Experience. Shop Cards, Join Events."
+  </h1>
+  <div class="grid-container mt-[50px] px-[20px] pb-[50px]">
     <div
-      class="mt-[16px] flex justify-center items-center flex-col gap-[16px] border-[1px] rounded-[10px] w-[375px] h-[auto]"
+      v-for="(card, index) in data.cards"
+      :key="index"
+      class="border border-gray-300 rounded-lg p-6"
     >
-      <img
-        :src="redBull"
-        class="w-[400px] rounded-[10px]"
-        alt="components image"
-      />
-      <div class="mt-[20px] text-center">
-        <h3 class="text-white text-[16px] font-medium">Red Bull Event</h3>
-        <p class="text-[#85858D] text-[12px] font-normal mt-[8px]">
-          20.02.24 - 20:00
+      <img :src="card.photo" class="w-full rounded-lg mb-4" :alt="card.name" />
+      <div class="text-left">
+        <h3 class="text-white text-lg font-bold mb-2 uppercase">
+          {{ card.name }}
+        </h3>
+        <p class="card-details text-gray-600 text-sm">
+          {{ card.date }} - {{ card.time }}
         </p>
-        <h2
-          class="text-white w-[720px] text-[32px] leading-10 font-medium mt-[16px]"
-        >
-          Welcome And Fly!
-        </h2>
-      </div>
-      <div class="flex justify-center items-center">
-        <button
-          class="text-[white] px-[10px] py-[8px] border-[1px] duration-500 rounded-[5px] outline-none hover:bg-[white] hover:text-[#04011d]"
-        >
-          BUY NOW -<span> 9.99$</span>
-        </button>
-      </div>
-      <div
-        class="ml-auto mr-[15px] mb-[10px] cursor-pointer hover:scale-90 transition-transform"
-      >
-        <p class="text-[white] font-light text-[15px]">More Info</p>
-        <hr class="h-[1px] w-[48px]bg-[white]" />
+        <h2 class="text-white text-[32px] mt-[10px]">{{ card.title }}</h2>
+        <div class="flex justify-center items-center mt-[10px]">
+          <button
+            class="text-[white] px-[10px] py-[8px] border-[1px] duration-500 rounded-[5px] outline-none hover:bg-[white] hover:text-[#04011d]"
+          >
+            BUY NOW -<span> ${{ card.price }}</span>
+          </button>
+
+          <div
+            class="ml-auto mr-[15px] mb-[10px] cursor-pointer hover:scale-90 transition-transform"
+          >
+            <p class="text-[white] font-light text-[15px]">More Info</p>
+            <hr class="h-[1px] w-[48px] bg-[white]" />
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </template>
+
+<script>
+import data from "../../data.json";
+
+export default {
+  data() {
+    return {
+      data: data,
+    };
+  },
+};
+</script>
+
+<style scoped>
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+  justify-items: center;
+}
+</style>

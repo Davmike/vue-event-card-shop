@@ -1,57 +1,66 @@
 {
   "cards": [
     {
-      "name": "Cinema",
+      "name": "Mountain Bike",
       "date": "03.23.24",
-      "title": "Welcome And Fly!",
-      "price": 5.99,
-      "photo": "./src/assets/cinema.jpeg"
-    },
-    {
-      "name": "Hiki",
-      "date": "03.23.24",
-      "title": "Welcome And Fly!",
-      "price": 7.49,
-      "photo": "./src/assets/hiki.jpeg"
-    },
-    {
-      "name": "It",
-      "date": "03.23.24",
-      "title": "Welcome And Fly!",
-      "price": 9.99,
-      "photo": "./src/assets/it.jpeg"
-    },
-    {
-      "name": "Moto",
-      "date": "03.23.24",
-      "title": "Welcome And Fly!",
-      "price": 3.99,
-      "photo": "./src/assets/moto.jpeg"
-    },
-    {
-      "name": "Bike",
-      "date": "03.23.24",
+      "time": "20:00",
       "title": "Welcome And Fly!",
       "price": 11.29,
       "photo": "./src/assets/mountain-bike.jpeg"
     },
     {
-      "name": "Music",
-      "date": "03.23.24",
-      "title": "Welcome And Fly!",
-      "price": 6.99,
-      "photo": "./src/assets/music.jpeg"
-    },
-    {
       "name": "Redbull",
       "date": "03.23.24",
+      "time": "20:00",
       "title": "Welcome And Fly!",
       "price": 8.79,
       "photo": "./src/assets/redbull.jpeg"
     },
     {
+      "name": "Cinema",
+      "date": "03.23.24",
+      "time": "20:00",
+      "title": "Welcome And Fly!",
+      "price": 5.99,
+      "photo": "./src/assets/cinema.jpeg"
+    },
+    {
+      "name": "Hiking",
+      "date": "03.23.24",
+      "time": "20:00",
+      "title": "Welcome And Fly!",
+      "price": 7.49,
+      "photo": "./src/assets/hiki.jpeg"
+    },
+    {
+      "name": "AI",
+      "date": "03.23.24",
+      "time": "20:00",
+      "title": "Welcome And Fly!",
+      "price": 9.99,
+      "photo": "./src/assets/it.jpeg"
+    },
+    {
+      "name": "Motocross",
+      "date": "03.23.24",
+      "time": "20:00",
+      "title": "Welcome And Fly!",
+      "price": 3.99,
+      "photo": "./src/assets/moto.jpeg"
+    },
+    {
+      "name": "Music",
+      "date": "03.23.24",
+      "time": "20:00",
+      "title": "Welcome And Fly!",
+      "price": 6.99,
+      "photo": "./src/assets/music.jpeg"
+    },
+
+    {
       "name": "Tech",
       "date": "03.23.24",
+      "time": "20:00",
       "title": "Welcome And Fly!",
       "price": 4.49,
       "photo": "./src/assets/tech.jpeg"
@@ -59,6 +68,7 @@
     {
       "name": "Soccer",
       "date": "03.23.24",
+      "time": "20:00",
       "title": "Welcome And Fly!",
       "price": 10.99,
       "photo": "./src/assets/soccer.jpeg"
@@ -66,6 +76,7 @@
     {
       "name": "Spiderman",
       "date": "03.23.24",
+      "time": "20:00",
       "title": "Welcome And Fly!",
       "price": 12.99,
       "photo": "./src/assets/spiderman.jpeg"
