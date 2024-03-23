@@ -1,54 +1,74 @@
 {
   "cards": [
     {
-      "name": "Card 1",
+      "name": "Cinema",
+      "date": "03.23.24",
+      "title": "Welcome And Fly!",
       "price": 5.99,
-      "photo": "https://example.com/card1.jpg"
+      "photo": "./src/assets/cinema.jpeg"
     },
     {
-      "name": "Card 2",
+      "name": "Hiki",
+      "date": "03.23.24",
+      "title": "Welcome And Fly!",
       "price": 7.49,
-      "photo": "https://example.com/card2.jpg"
+      "photo": "./src/assets/hiki.jpeg"
     },
     {
-      "name": "Card 3",
+      "name": "It",
+      "date": "03.23.24",
+      "title": "Welcome And Fly!",
       "price": 9.99,
-      "photo": "https://example.com/card3.jpg"
+      "photo": "./src/assets/it.jpeg"
     },
     {
-      "name": "Card 4",
+      "name": "Moto",
+      "date": "03.23.24",
+      "title": "Welcome And Fly!",
       "price": 3.99,
-      "photo": "https://example.com/card4.jpg"
+      "photo": "./src/assets/moto.jpeg"
     },
     {
-      "name": "Card 5",
+      "name": "Bike",
+      "date": "03.23.24",
+      "title": "Welcome And Fly!",
       "price": 11.29,
-      "photo": "https://example.com/card5.jpg"
+      "photo": "./src/assets/mountain-bike.jpeg"
     },
     {
-      "name": "Card 6",
+      "name": "Music",
+      "date": "03.23.24",
+      "title": "Welcome And Fly!",
       "price": 6.99,
-      "photo": "https://example.com/card6.jpg"
+      "photo": "./src/assets/music.jpeg"
     },
     {
-      "name": "Card 7",
+      "name": "Redbull",
+      "date": "03.23.24",
+      "title": "Welcome And Fly!",
       "price": 8.79,
-      "photo": "https://example.com/card7.jpg"
+      "photo": "./src/assets/redbull.jpeg"
     },
     {
-      "name": "Card 8",
+      "name": "Tech",
+      "date": "03.23.24",
+      "title": "Welcome And Fly!",
       "price": 4.49,
-      "photo": "https://example.com/card8.jpg"
+      "photo": "./src/assets/tech.jpeg"
     },
     {
-      "name": "Card 9",
+      "name": "Soccer",
+      "date": "03.23.24",
+      "title": "Welcome And Fly!",
       "price": 10.99,
-      "photo": "https://example.com/card9.jpg"
+      "photo": "./src/assets/soccer.jpeg"
     },
     {
-      "name": "Card 10",
+      "name": "Spiderman",
+      "date": "03.23.24",
+      "title": "Welcome And Fly!",
       "price": 12.99,
-      "photo": "https://example.com/card10.jpg"
+      "photo": "./src/assets/spiderman.jpeg"
     }
   ]
 }

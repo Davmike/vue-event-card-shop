@@ -18,7 +18,7 @@ import cartShopImage from "@/assets/icon-cart.png";
         alt=""
       />
       <button
-        class="border-[1px] px-[10px] py-[5px] text-[white] duration-500 rounded-[5px] hover:bg-[white] hover:text-[#04011d]"
+        class="border-[1px] px-[10px] py-[5px] text-[white] duration-500 rounded-[5px] outline-none hover:bg-[white] hover:text-[#04011d]"
       >
         GALLERY
       </button>
