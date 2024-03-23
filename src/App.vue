@@ -5,8 +5,8 @@ import Header from "@/components/Header.vue";
 <template>
   <Header />
   <div id="nav">
-    <router-link to="/">ProductList</router-link> |
-    <router-link to="/productDetail">ProductDetail</router-link>
+    <router-link to="/"></router-link> |
+    <router-link to="/productDetail"></router-link>
   </div>
   <router-view />
   <main>

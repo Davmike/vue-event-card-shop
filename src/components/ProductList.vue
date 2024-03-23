@@ -1,39 +1,40 @@
 <template>
-  <h1 class="text-[white] text-[40px] text-center mt-[50px]">
-    "Unlock Every Experience. Shop Cards, Join Events."
-  </h1>
-  <div class="grid-container mt-[50px] px-[20px] pb-[50px]">
-    <div
-      v-for="(card, index) in data.cards"
-      :key="index"
-      class="border border-gray-300 rounded-lg p-6"
-    >
-      <img :src="card.photo" class="w-full rounded-lg mb-4" :alt="card.name" />
-      <div class="text-left">
-        <h3 class="text-white text-lg font-bold mb-2 uppercase">
-          {{ card.name }}
-        </h3>
-        <p class="card-details text-gray-600 text-sm">
-          {{ card.date }} - {{ card.time }}
-        </p>
-        <h2 class="text-white text-[32px] mt-[10px]">{{ card.title }}</h2>
-        <div class="flex justify-center items-center mt-[10px]">
-          <button
-            class="text-[white] px-[10px] py-[8px] border-[1px] duration-500 rounded-[5px] outline-none hover:bg-[white] hover:text-[#04011d]"
-          >
-            BUY NOW -<span> ${{ card.price }}</span>
-          </button>
-
-          <div
-            class="ml-auto mr-[15px] mb-[10px] cursor-pointer hover:scale-90 transition-transform"
-          >
-            <p
-              class="text-[white] font-light text-[15px]"
-              @click="navigateToProductDetail(card.id)"
+  <div>
+    <h1 class="text-white text-4xl text-center mt-10">
+      Unlock Every Experience. Shop Cards, Join Events.
+    </h1>
+    <div class="grid-container mt-10 px-20 pb-20">
+      <div
+        v-for="(card, index) in filteredCards"
+        :key="index"
+        class="border border-gray-300 rounded-lg p-6"
+      >
+        <img
+          :src="card.photo"
+          class="w-full rounded-lg mb-4"
+          :alt="card.name"
+        />
+        <div class="text-left">
+          <h3 class="text-white text-lg font-bold mb-2 uppercase">
+            {{ card.name }}
+          </h3>
+          <p class="card-details text-gray-600 text-sm">
+            {{ card.date }} - {{ card.time }}
+          </p>
+          <h2 class="text-white text-2xl mt-2">{{ card.title }}</h2>
+          <div class="flex justify-center items-center mt-2">
+            <button
+              class="text-white px-4 py-2 border border-white rounded outline-none hover:bg-white hover:text-black"
             >
-              More Info
-            </p>
-            <hr class="h-[1px] w-[48px] bg-[white]" />
+              BUY NOW - <span>${{ card.price }}</span>
+            </button>
+            <div
+              class="ml-auto mr-4 cursor-pointer hover:scale-90 transition-transform"
+              @click="navigateToProductDetail(card.name)"
+            >
+              <p class="text-white font-light text-sm">More Info</p>
+              <hr class="h-1 w-12 bg-white mt-1" />
+            </div>
           </div>
         </div>
       </div>
@@ -48,11 +49,38 @@ export default {
   data() {
     return {
       data: data,
+      selectedCategories: [],
     };
   },
+  computed: {
+    filteredCards() {
+      if (this.selectedCategories.length === 0) {
+        return this.data.cards;
+      } else {
+        return this.data.cards.filter((card) =>
+          card.categories.some((category) =>
+            this.selectedCategories.includes(category)
+          )
+        );
+      }
+    },
+  },
   methods: {
-    navigateToProductDetail(cardId) {
-      this.$router.push({ path: "/productDetail", query: { id: cardId } });
+    navigateToProductDetail(cardName) {
+      // Pass the selected category as a query parameter
+      this.$router.push({
+        path: "/productDetail",
+        query: { name: cardName, selectedCategory: this.selectedCategories },
+      });
+    },
+    handleButtonClick(category) {
+      if (this.selectedCategories.includes(category)) {
+        this.selectedCategories = this.selectedCategories.filter(
+          (value) => value !== category
+        );
+      } else {
+        this.selectedCategories.push(category);
+      }
     },
   },
 };

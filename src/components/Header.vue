@@ -7,7 +7,7 @@ import cartShopImage from "@/assets/icon-cart.png";
   <header
     class="border-[1px] px-[20px] py-[10px] flex justify-between items-center"
   >
-    <div class="flex gap-[10px] items-center">
+    <div class="flex gap-[10px] items-center cursor-pointer">
       <img :src="cardShopImage" class="w-[50px] h-[50px]" alt="" />
       <h3 class="text-[white]">Card Shop</h3>
     </div>
