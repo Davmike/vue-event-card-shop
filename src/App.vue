@@ -1,11 +1,14 @@
 <script setup>
 import Header from "@/components/Header.vue";
-import ProductList from "@/components/ProductList.vue";
 </script>
 
 <template>
   <Header />
-  <ProductList />
+  <div id="nav">
+    <router-link to="/">ProductList</router-link> |
+    <router-link to="/productDetail">ProductDetail</router-link>
+  </div>
+  <router-view />
   <main>
     <TheWelcome />
   </main>

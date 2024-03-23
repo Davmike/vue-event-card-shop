@@ -27,7 +27,12 @@
           <div
             class="ml-auto mr-[15px] mb-[10px] cursor-pointer hover:scale-90 transition-transform"
           >
-            <p class="text-[white] font-light text-[15px]">More Info</p>
+            <p
+              class="text-[white] font-light text-[15px]"
+              @click="navigateToProductDetail(card.id)"
+            >
+              More Info
+            </p>
             <hr class="h-[1px] w-[48px] bg-[white]" />
           </div>
         </div>
@@ -44,6 +49,11 @@ export default {
     return {
       data: data,
     };
+  },
+  methods: {
+    navigateToProductDetail(cardId) {
+      this.$router.push({ path: "/productDetail", query: { id: cardId } });
+    },
   },
 };
 </script>
