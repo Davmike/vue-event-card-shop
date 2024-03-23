@@ -38,7 +38,7 @@ export default {
         class="w-[400px] rounded-[10px]"
         alt="components image"
       />
-      <div class="mt-[20px] pb-[20px] text-center">
+      <div class="mt-[20px] text-center">
         <h3 class="text-white text-[16px] font-medium">Red Bull Event</h3>
         <p class="text-[#85858D] text-[12px] font-normal mt-[8px]">
           20.02.24 - 20:00
@@ -48,6 +48,19 @@ export default {
         >
           Welcome And Fly!
         </h2>
+      </div>
+      <div class="flex justify-center items-center">
+        <button
+          class="text-[white] px-[10px] py-[8px] border-[1px] duration-500 rounded-[5px] outline-none hover:bg-[white] hover:text-[#04011d]"
+        >
+          BUY NOW -<span> 9.99$</span>
+        </button>
+      </div>
+      <div
+        class="ml-auto mr-[15px] mb-[10px] cursor-pointer hover:scale-90 transition-transform"
+      >
+        <p class="text-[white] font-light text-[15px]">More Info</p>
+        <hr class="h-[1px] w-[48px]bg-[white]" />
       </div>
     </div>
   </div>
