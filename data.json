@@ -1,0 +1,54 @@
+{
+  "cards": [
+    {
+      "name": "Card 1",
+      "price": 5.99,
+      "photo": "https://example.com/card1.jpg"
+    },
+    {
+      "name": "Card 2",
+      "price": 7.49,
+      "photo": "https://example.com/card2.jpg"
+    },
+    {
+      "name": "Card 3",
+      "price": 9.99,
+      "photo": "https://example.com/card3.jpg"
+    },
+    {
+      "name": "Card 4",
+      "price": 3.99,
+      "photo": "https://example.com/card4.jpg"
+    },
+    {
+      "name": "Card 5",
+      "price": 11.29,
+      "photo": "https://example.com/card5.jpg"
+    },
+    {
+      "name": "Card 6",
+      "price": 6.99,
+      "photo": "https://example.com/card6.jpg"
+    },
+    {
+      "name": "Card 7",
+      "price": 8.79,
+      "photo": "https://example.com/card7.jpg"
+    },
+    {
+      "name": "Card 8",
+      "price": 4.49,
+      "photo": "https://example.com/card8.jpg"
+    },
+    {
+      "name": "Card 9",
+      "price": 10.99,
+      "photo": "https://example.com/card9.jpg"
+    },
+    {
+      "name": "Card 10",
+      "price": 12.99,
+      "photo": "https://example.com/card10.jpg"
+    }
+  ]
+}
