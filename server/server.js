@@ -14,7 +14,6 @@ db.once("open", function () {
   console.log("Connected to MongoDB");
 });
 
-// Define Product Schema
 const productSchema = new mongoose.Schema({
   name: String,
   price: Number,
