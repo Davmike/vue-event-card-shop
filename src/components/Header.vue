@@ -18,12 +18,12 @@ const toggleCartVisibility = () => {
 // Router
 const router = useRouter();
 
-const navigateToProductDetail = () => {
-  router.push("/productDetail");
+const navigateToProductList = () => {
+  router.push("/");
+  isCartVisible.value = !isCartVisible.value;
 };
 
-const quantity = ref(0);
-const price = ref(9);
+const price = ref(9.5);
 
 const increment = () => {
   if (quantity.value >= 0) {
@@ -36,13 +36,24 @@ const decrement = () => {
     quantity.value--;
   }
 };
+
+const goToCheckout = () => {
+  router.push({ name: "Checkout" });
+  isCartVisible.value = !isCartVisible.value;
+};
+</script>
+<script>
+export const quantity = ref(0);
 </script>
 
 <template>
   <header
     class="border-[1px] px-[20px] py-[10px] flex justify-between items-center"
   >
-    <div class="flex gap-[10px] items-center cursor-pointer">
+    <div
+      class="flex gap-[10px] items-center cursor-pointer"
+      @click="navigateToProductList"
+    >
       <img :src="cardShopImage" class="w-[50px] h-[50px]" alt="Card Shop" />
       <h3 class="text-[white]">Card Shop</h3>
     </div>
@@ -55,7 +66,7 @@ const decrement = () => {
       />
       <button
         class="border-[1px] px-[10px] py-[5px] text-[white] duration-500 rounded-[5px] outline-none hover:bg-[white] hover:text-[#04011d]"
-        @click="navigateToProductDetail"
+        @click="navigateToProductList"
       >
         GALLERY
       </button>
@@ -76,7 +87,7 @@ const decrement = () => {
         <div className="flex">
           <div className="flex flex-col ml-[16px]">
             <p className="text-[white] text-[16px] font-normal">
-              You Just Experienced the Best Cart Event Ever!
+              You Just Experienced the Best Card Event Ever!
             </p>
             <div className="flex flex-row mt-[10px]">
               <p className="text-[white] text-[16px] font-normal">
@@ -116,6 +127,7 @@ const decrement = () => {
         </div>
         <button
           className="h-[56px] w-[312px] border-[1px] rounded-[10px] mt-[24px] text-[white] text-[16px] font-bold cursor-pointer hover:scale-90 transition-transform hover:bg-white hover:text-black"
+          @click="goToCheckout"
         >
           Checkout
         </button>
