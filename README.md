@@ -1,4 +1,4 @@
-# Bootcamp Blog
+# VUE Card Shop
 
 ## Table of contents
 
