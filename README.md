@@ -19,9 +19,8 @@ Users should be able to:
 
 - View the optimal layout for each page depending on their device's screen size
 - See hover states for all interactive elements throughout the site
-- Authorization
-- Upload Personal Info
-- Add blogs
+- Buy Cards
+- Checkout
 
 ### Screenshot
 
@@ -32,15 +31,15 @@ Users should be able to:
 1. First of all you need to clone app repository from github:
 
 ```
-git clone git@github.com:beqa200/geleck.git
+git clone git@github.com:Davmike/vue-card-shop.git
 ```
 
 2. Next step requires to start live server.
 
 ### Links
 
-- Solution URL: [Github](https://github.com/beqa200/geleck)
-- Live Site URL: [Vercel](https://geleck.vercel.app/)
+- Solution URL: [Github](https://github.com/Davmike/vue-event-card-shop)
+- Live Site URL: [Vercel](vue-event-card-shop.vercel.app)
 
 ## My process
 
