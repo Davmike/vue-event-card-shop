@@ -20,10 +20,8 @@ const router = useRouter();
 
 const navigateToProductList = () => {
   router.push("/");
-  isCartVisible.value = !isCartVisible.value;
+  isCartVisible.value = false;
 };
-
-const price = ref(9.5);
 
 const increment = () => {
   if (quantity.value >= 0) {
@@ -39,11 +37,16 @@ const decrement = () => {
 
 const goToCheckout = () => {
   router.push({ name: "Checkout" });
-  isCartVisible.value = !isCartVisible.value;
+  isCartVisible.value = false;
+};
+
+const resetQuantity = () => {
+  quantity.value = 0; // Reset quantity to 0
 };
 </script>
 <script>
-export const quantity = ref(0);
+export const quantity = ref(1);
+export const price = ref(9.5);
 </script>
 
 <template>
@@ -118,6 +121,7 @@ export const quantity = ref(0);
                 />
               </button>
               <img
+                @click="resetQuantity"
                 className="absolute right-[8%] top-[42%] cursor-pointer"
                 :src="trash"
                 alt=""
