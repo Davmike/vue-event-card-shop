@@ -90,6 +90,13 @@ export default {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 20px;
-  justify-items: center;
+  justify-items: center; /* Center grid items by default */
+}
+
+@media screen and (max-width: 460px) {
+  .grid-container {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    padding: 10px;
+  }
 }
 </style>

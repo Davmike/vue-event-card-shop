@@ -16,11 +16,25 @@ import { price } from "@/components/Header.vue";
         <img :src="purchase" class="w-full rounded-lg mb-4" />
       </div>
       <div class="flex justify-center items-center mt-[20px] flex-col">
-        <p class="text-[white] text-[35px]">
+        <p class="text-[white] text-[35px] text-event">
           YOU SEND IT!<span> - {{ quantity }} EVENT CARDS</span>
         </p>
-        <p class="text-[white] text-[35px]">TOTAL: {{ quantity * price }}$</p>
+        <p class="text-[white] text-[35px] text">
+          TOTAL: {{ quantity * price }}$
+        </p>
       </div>
     </div>
   </div>
 </template>
+
+<style scoped>
+@media screen and (max-width: 560px) {
+  .text {
+    font-size: 20px; /* Decrease font size for smaller screens */
+  }
+
+  .text-event {
+    font-size: 15px;
+  }
+}
+</style>
