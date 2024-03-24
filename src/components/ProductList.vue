@@ -67,7 +67,6 @@ export default {
   },
   methods: {
     navigateToProductDetail(cardName) {
-      // Pass the selected category as a query parameter
       this.$router.push({
         path: "/productDetail",
         query: { name: cardName, selectedCategory: this.selectedCategories },

@@ -1,6 +1,4 @@
-<script setup>
-import redbull from "@/assets/redbull.jpeg";
-</script>
+<script setup></script>
 
 <template>
   <div>

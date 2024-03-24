@@ -5,7 +5,7 @@
       "date": "03.23.24",
       "time": "20:00",
       "title": "Welcome And Fly!",
-      "price": 11.29,
+      "price": 9.5,
       "photo": "./src/assets/mountain-bike.jpeg"
     },
     {
@@ -13,7 +13,7 @@
       "date": "03.23.24",
       "time": "20:00",
       "title": "Welcome And Fly!",
-      "price": 8.79,
+      "price": 9.5,
       "photo": "./src/assets/redbull.jpeg"
     },
     {
@@ -21,7 +21,7 @@
       "date": "03.23.24",
       "time": "20:00",
       "title": "Welcome And Fly!",
-      "price": 5.99,
+      "price": 9.5,
       "photo": "./src/assets/cinema.jpeg"
     },
     {
@@ -29,7 +29,7 @@
       "date": "03.23.24",
       "time": "20:00",
       "title": "Welcome And Fly!",
-      "price": 7.49,
+      "price": 9.5,
       "photo": "./src/assets/hiki.jpeg"
     },
     {
@@ -37,7 +37,7 @@
       "date": "03.23.24",
       "time": "20:00",
       "title": "Welcome And Fly!",
-      "price": 9.99,
+      "price": 9.5,
       "photo": "./src/assets/it.jpeg"
     },
     {
@@ -45,7 +45,7 @@
       "date": "03.23.24",
       "time": "20:00",
       "title": "Welcome And Fly!",
-      "price": 3.99,
+      "price": 9.5,
       "photo": "./src/assets/moto.jpeg"
     },
     {
@@ -53,7 +53,7 @@
       "date": "03.23.24",
       "time": "20:00",
       "title": "Welcome And Fly!",
-      "price": 6.99,
+      "price": 9.5,
       "photo": "./src/assets/music.jpeg"
     },
 
@@ -62,7 +62,7 @@
       "date": "03.23.24",
       "time": "20:00",
       "title": "Welcome And Fly!",
-      "price": 4.49,
+      "price": 9.5,
       "photo": "./src/assets/tech.jpeg"
     },
     {
@@ -70,7 +70,7 @@
       "date": "03.23.24",
       "time": "20:00",
       "title": "Welcome And Fly!",
-      "price": 10.99,
+      "price": 9.5,
       "photo": "./src/assets/soccer.jpeg"
     },
     {
@@ -78,7 +78,7 @@
       "date": "03.23.24",
       "time": "20:00",
       "title": "Welcome And Fly!",
-      "price": 12.99,
+      "price": 9.5,
       "photo": "./src/assets/spiderman.jpeg"
     }
   ]
