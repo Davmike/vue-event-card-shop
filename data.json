@@ -6,7 +6,7 @@
       "time": "07:30",
       "title": "SEND IT!",
       "price": 9.5,
-      "photo": "./src/assets/mountain-bike.jpeg"
+      "photo": "./assets/mountain-bike.jpeg"
     },
     {
       "name": "Redbull",
@@ -14,7 +14,7 @@
       "time": "15:30",
       "title": "WELCOME AND FLY!",
       "price": 9.5,
-      "photo": "./src/assets/redbull.jpeg"
+      "photo": "./assets/redbull.jpeg"
     },
     {
       "name": "Music",
@@ -22,7 +22,7 @@
       "time": "20:30",
       "title": "JUSTIN BIEBER'S CONCERT!",
       "price": 9.5,
-      "photo": "./src/assets/music.jpeg"
+      "photo": "./assets/music.jpeg"
     },
     {
       "name": "Soccer",
@@ -30,7 +30,7 @@
       "time": "22:45",
       "title": "ARGENTINA VS FRANCE!",
       "price": 9.5,
-      "photo": "./src/assets/soccer.jpeg"
+      "photo": "./assets/soccer.jpeg"
     },
     {
       "name": "Motocross",
@@ -38,7 +38,7 @@
       "time": "07:00",
       "title": "DO A WHEELIE!",
       "price": 9.5,
-      "photo": "./src/assets/moto.jpeg"
+      "photo": "./assets/moto.jpeg"
     },
     {
       "name": "Cinema",
@@ -46,7 +46,7 @@
       "time": "16:00",
       "title": "CINEMA WITH AI!",
       "price": 9.5,
-      "photo": "./src/assets/cinema.jpeg"
+      "photo": "./assets/cinema.jpeg"
     },
     {
       "name": "Hiking",
@@ -54,7 +54,7 @@
       "time": "19:00",
       "title": "AROUND THE WORLD!",
       "price": 9.5,
-      "photo": "./src/assets/hiki.jpeg"
+      "photo": "./assets/hiki.jpeg"
     },
     {
       "name": "AI",
@@ -62,7 +62,7 @@
       "time": "12:30",
       "title": "CAN'T TAKE MY JOB!",
       "price": 9.5,
-      "photo": "./src/assets/it.jpeg"
+      "photo": "./assets/it.jpeg"
     },
     {
       "name": "Tech",
@@ -70,7 +70,7 @@
       "time": "11:00",
       "title": "GOOD JOB!",
       "price": 9.5,
-      "photo": "./src/assets/tech.jpeg"
+      "photo": "./assets/tech.jpeg"
     },
     {
       "name": "Spiderman",
@@ -78,7 +78,7 @@
       "time": "23:00",
       "title": "SPIDER-MAN SAVES MARY JANE!",
       "price": 9.5,
-      "photo": "./src/assets/spiderman.jpeg"
+      "photo": "./assets/spiderman.jpeg"
     }
   ]
 }

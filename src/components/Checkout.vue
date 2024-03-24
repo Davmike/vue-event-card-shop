@@ -1,5 +1,5 @@
 <script setup>
-import purchase from "@/assets/buy.jpeg";
+import purchase from "../../public/assets/buy.jpeg";
 import { quantity } from "@/components/Header.vue";
 import { price } from "@/components/Header.vue";
 </script>

@@ -3,11 +3,11 @@ import { ref } from "vue";
 import { useRouter } from "vue-router";
 
 // Import images
-import cardShopImage from "@/assets/icon-card.png";
-import cartShopImage from "@/assets/icon-cart.png";
-import trash from "@/assets/trash.png";
-import plus from "@/assets/plus.png";
-import minus from "@/assets/minus.png";
+import cardShopImage from "../../public/assets/icon-card.png";
+import cartShopImage from "../../public/assets/icon-cart.png";
+import trash from "../../public/assets/trash.png";
+import plus from "../../public/assets/plus.png";
+import minus from "../../public/assets/minus.png";
 
 const isCartVisible = ref(false);
 
