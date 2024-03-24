@@ -3,81 +3,80 @@
     {
       "name": "Mountain Bike",
       "date": "03.23.24",
-      "time": "20:00",
-      "title": "Welcome And Fly!",
+      "time": "07:30",
+      "title": "SEND IT!",
       "price": 9.5,
       "photo": "./src/assets/mountain-bike.jpeg"
     },
     {
       "name": "Redbull",
-      "date": "03.23.24",
-      "time": "20:00",
-      "title": "Welcome And Fly!",
+      "date": "02.20.25",
+      "time": "15:30",
+      "title": "WELCOME AND FLY!",
       "price": 9.5,
       "photo": "./src/assets/redbull.jpeg"
     },
     {
+      "name": "Music",
+      "date": "12.22.25",
+      "time": "20:30",
+      "title": "JUSTIN BIEBER'S CONCERT!",
+      "price": 9.5,
+      "photo": "./src/assets/music.jpeg"
+    },
+    {
+      "name": "Soccer",
+      "date": "09.29.25",
+      "time": "22:45",
+      "title": "ARGENTINA VS FRANCE!",
+      "price": 9.5,
+      "photo": "./src/assets/soccer.jpeg"
+    },
+    {
+      "name": "Motocross",
+      "date": "08.21.25",
+      "time": "07:00",
+      "title": "DO A WHEELIE!",
+      "price": 9.5,
+      "photo": "./src/assets/moto.jpeg"
+    },
+    {
       "name": "Cinema",
-      "date": "03.23.24",
-      "time": "20:00",
-      "title": "Welcome And Fly!",
+      "date": "01.17.25",
+      "time": "16:00",
+      "title": "CINEMA WITH AI!",
       "price": 9.5,
       "photo": "./src/assets/cinema.jpeg"
     },
     {
       "name": "Hiking",
-      "date": "03.23.24",
-      "time": "20:00",
-      "title": "Welcome And Fly!",
+      "date": "07.30.25",
+      "time": "19:00",
+      "title": "AROUND THE WORLD!",
       "price": 9.5,
       "photo": "./src/assets/hiki.jpeg"
     },
     {
       "name": "AI",
-      "date": "03.23.24",
-      "time": "20:00",
-      "title": "Welcome And Fly!",
+      "date": "09.10.25",
+      "time": "12:30",
+      "title": "CAN'T TAKE MY JOB!",
       "price": 9.5,
       "photo": "./src/assets/it.jpeg"
     },
     {
-      "name": "Motocross",
-      "date": "03.23.24",
-      "time": "20:00",
-      "title": "Welcome And Fly!",
-      "price": 9.5,
-      "photo": "./src/assets/moto.jpeg"
-    },
-    {
-      "name": "Music",
-      "date": "03.23.24",
-      "time": "20:00",
-      "title": "Welcome And Fly!",
-      "price": 9.5,
-      "photo": "./src/assets/music.jpeg"
-    },
-
-    {
       "name": "Tech",
-      "date": "03.23.24",
-      "time": "20:00",
-      "title": "Welcome And Fly!",
+      "date": "11.16.25",
+      "time": "11:00",
+      "title": "GOOD JOB!",
       "price": 9.5,
       "photo": "./src/assets/tech.jpeg"
     },
     {
-      "name": "Soccer",
-      "date": "03.23.24",
-      "time": "20:00",
-      "title": "Welcome And Fly!",
-      "price": 9.5,
-      "photo": "./src/assets/soccer.jpeg"
-    },
-    {
       "name": "Spiderman",
-      "date": "03.23.24",
-      "time": "20:00",
-      "title": "Welcome And Fly!",
+      "date": "04.17.25",
+      "time": "23:00",
+      "title": "SPIDER-MAN SAVES MARY JANE!",
       "price": 9.5,
       "photo": "./src/assets/spiderman.jpeg"
     }
