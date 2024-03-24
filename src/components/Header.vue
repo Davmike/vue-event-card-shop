@@ -89,7 +89,7 @@ export const price = ref(9.5);
       <div className="px-[24px] pt-[24px] pb-[32px]">
         <div className="flex">
           <div className="flex flex-col ml-[16px]">
-            <p className="text-[white] text-[16px] font-normal">
+            <p className="text-[white] text-[16px] font-normal cart-text">
               You Just Experienced the Best Card Event Ever!
             </p>
             <div className="flex flex-row mt-[10px]">
@@ -102,9 +102,9 @@ export const price = ref(9.5);
                 ${{ quantity * price }}
               </p>
             </div>
-            <div class="flex justify-center items-center">
+            <div class="button-div flex justify-center items-center">
               <button
-                class="h-[30px] w-[100px] border-[1px] rounded-[10px] mt-[24px] text-[white] text-[16px] font-bold flex justify-between items-center px-[5px]"
+                class="equal-cart h-[30px] w-[100px] border-[1px] rounded-[10px] mt-[24px] text-[white] text-[16px] font-bold flex justify-between items-center px-[5px]"
               >
                 <img
                   :src="minus"
@@ -122,7 +122,7 @@ export const price = ref(9.5);
               </button>
               <img
                 @click="resetQuantity"
-                className="absolute right-[8%] top-[42%] cursor-pointer"
+                className="absolute right-[8%] top-[42%] cursor-pointer trash"
                 :src="trash"
                 alt=""
               />
@@ -130,7 +130,7 @@ export const price = ref(9.5);
           </div>
         </div>
         <button
-          className="h-[56px] w-[312px] border-[1px] rounded-[10px] mt-[24px] text-[white] text-[16px] font-bold cursor-pointer hover:scale-90 transition-transform hover:bg-white hover:text-black"
+          className="cart-button h-[56px] w-[312px] border-[1px] rounded-[10px] mt-[24px] text-[white] text-[16px] font-bold cursor-pointer hover:scale-90 transition-transform hover:bg-white hover:text-black"
           @click="goToCheckout"
         >
           Checkout
@@ -143,5 +143,23 @@ export const price = ref(9.5);
 <style scoped>
 .cart {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 450px) {
+  .cart {
+    max-width: 285px;
+  }
+  .cart-text {
+    text-align: center;
+  }
+  .cart-button {
+    width: 230px;
+  }
+  .equal-cart {
+    width: 90px;
+  }
+  .trash {
+    top: 52%;
+  }
 }
 </style>
